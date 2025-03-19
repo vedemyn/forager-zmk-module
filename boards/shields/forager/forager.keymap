@@ -97,7 +97,7 @@
         };
         sym {
             bindings = <
-            &kp TILDE       &kp UNDER       &kp PLUS        &kp COLON       &kp PIPE                                        &kp LBKT        &kp LBRC        &kp RBRC        &RBKT           &kp BSPC
+            &kp TILDE       &kp UNDER       &kp PLUS        &kp COLON       &kp PIPE                                        &kp LBKT        &kp LBRC        &kp RBRC        &kp RBKT           &kp BSPC
             &kp GRAVE       &kp MINUS       &kp EQUAL       &kp SEMI        &kp BSLH                                        &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp RET
             &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR  
                                                                             &trans          &trans          &trans          &mo SYM
@@ -106,7 +106,7 @@
 
         nav {
             bindings = <
-            &kp TAB         &winswp         &langswp          &kp PSCRN       &kp CAPS                                        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp DELETE
+            &kp TAB         &winswp         &langswp        &kp PSCRN       &kp CAPS                                        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp DELETE
             &sk LGUI        &sk LALT        &sk LCTRL       &sk LSHFT       &kp ESC                                         &kp K_APP       &sk RSHFT       &sk RCTRL       &sk RALT        &sk RGUI
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
                                                                             &mo NAV          &trans       &trans         &trans
