@@ -11,6 +11,12 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH LS(LC(LALT))
 
+ZMK_TRI_STATE(winswp, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+              ignored-key-positions = <>;)
+
+ZMK_TRI_STATE(langswp, bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
+              ignored-key-positions = <>;)
+
 / {
     behaviors {
         as: auto_shift {
@@ -92,7 +98,7 @@
 
         nav {
             bindings = <
-            &kp TAB         &trans          &trans          &kp PSCRN       &kp CAPS                                        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp DELETE
+            &kp TAB         &winswp         &langswp          &kp PSCRN       &kp CAPS                                        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp DELETE
             &sk LGUI        &sk LALT        &sk LCTRL       &sk LSHFT       &kp ESC                                         &kp K_APP       &sk RSHFT       &sk RCTRL       &sk RALT        &sk RGUI
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
                                                                             &mo NAV          &trans       &trans         &trans
