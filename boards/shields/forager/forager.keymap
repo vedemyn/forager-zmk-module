@@ -62,14 +62,14 @@
         };
         winswp: windowswapper {
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "WINSWP";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <>;
         };
         langswp: languageswapper {
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "LANGSWP";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
             ignored-key-positions = <>;
@@ -90,17 +90,17 @@
         base {
             bindings = <
             &kp Q           &kp W           &kp E           &kp R           &kp T                                           &kp Y           &kp U           &kp I           &kp O           &kp P
-            &kp A           &kp S           &kp D           &kp F           &kp G                                           &kp F           &kp J           &kp K           &kp L           &kp SQT
+            &kp A           &kp S           &kp D           &kp F           &kp G                                           &kp H           &kp J           &kp K           &kp L           &kp SQT
             &kp Z           &kp X           &kp C           &kp V           &kp B                                           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH
-                                                                            &mo NAV         &kp SPACE       &kp LSHFT       &mo SYM
+                                                                            &mo SYM         &kp SPACE       &kp LSHFT       &mo NAV
             >;
         };
         sym {
             bindings = <
-            &kp TILDE       &kp UNDER       &kp PLUS        &kp COLON       &kp PIPE                                        &kp LBKT        &kp LBRC        &kp RBRC        &kp RBKT           &kp BSPC
+            &kp TILDE       &kp UNDER       &kp PLUS        &kp COLON       &kp PIPE                                        &kp LBKT        &kp LBRC        &kp RBRC        &kp RBKT        &kp BSPC
             &kp GRAVE       &kp MINUS       &kp EQUAL       &kp SEMI        &kp BSLH                                        &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp RET
             &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT                                       &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR  
-                                                                            &trans          &trans          &trans          &mo SYM
+                                                                            &trans          &trans          &trans          &trans
             >;
         };
 
@@ -109,7 +109,7 @@
             &kp TAB         &winswp         &langswp        &kp PSCRN       &kp CAPS                                        &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp DELETE
             &sk LGUI        &sk LALT        &sk LCTRL       &sk LSHFT       &kp ESC                                         &kp K_APP       &sk RSHFT       &sk RCTRL       &sk RALT        &sk RGUI
             &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
-                                                                            &mo NAV          &trans       &trans         &trans
+                                                                            &trans          &trans          &trans          &trans
             >;
         };       
 
