@@ -60,13 +60,21 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
+        winswp: windowswapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <>;
+        };
+        langswp: languageswapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
+            ignored-key-positions = <>;
+        };
     };
-
-    ZMK_TRI_STATE(winswp, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-              ignored-key-positions = <>;)
-
-    ZMK_TRI_STATE(langswp, bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
-              ignored-key-positions = <>;)
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
