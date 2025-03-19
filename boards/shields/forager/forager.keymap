@@ -11,12 +11,6 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH LS(LC(LALT))
 
-ZMK_TRI_STATE(winswp, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-              ignored-key-positions = <>;)
-
-ZMK_TRI_STATE(langswp, bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
-              ignored-key-positions = <>;)
-
 / {
     behaviors {
         as: auto_shift {
@@ -67,6 +61,12 @@ ZMK_TRI_STATE(langswp, bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
     };
+
+    ZMK_TRI_STATE(winswp, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+              ignored-key-positions = <>;)
+
+    ZMK_TRI_STATE(langswp, bindings = <&kt LGUI>, <&kp SPACE>, <&kt LGUI>;
+              ignored-key-positions = <>;)
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
